@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "NTA TEST Server",
+            "request":"launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+           
+          
+        //   "server": "http://localhost:8080/BC220NEW/",
+        "server": "http://20.204.54.141:8080/BC220NEW/",
+            "serverInstance": "BC220NEW",
+            "authentication": "UserPassword",
+        //    "startupObjectId":50002,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true, 
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "usePublicURLFromServer": true,
+             "port": 7049,
+           "schemaUpdateMode": "ForceSync"
+        
+        }
+    ]
+}

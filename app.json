@@ -1,0 +1,66 @@
+{
+  "id": "f7aaf49e-945e-4581-89cf-1c58799795a3",
+  "name": "NTA",
+  "publisher": "Default publisher",
+  "version": "1.0.0.7",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [ 
+
+     
+    {"id": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+    "name": "India GST","publisher": "Microsoft","version": "22.1.55890.56216"},
+
+    {"id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+               "name": "System Application","publisher": "Microsoft","version": "22.1.55890.56216"},
+               
+           {"id": "08d69832-9231-429e-be2c-8bab2c96905b",
+           "name": "Email - Current User Connector","publisher": "Microsoft","version": "22.1.55890.56216"},
+
+           {"id": "68e13fa3-217a-4be0-9141-99e5bf0ca818",
+           "name": "Email - SMTP Connector", "publisher": "Microsoft", "version": " 22.1.55890.56216"},
+
+           {"id": "eddcf82e-482c-49d1-836b-ad0284f2c5b0",
+           "name":"India TCS", "publisher": "Microsoft","version": "22.1.55890.56216"},
+
+           {"id": "eae5779e-7797-4c4c-977e-7516652b7a65",
+           "name":"India TDS", "publisher": "Microsoft","version": "22.1.55890.56216"},
+
+           {"id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+          "name": "Base Application","publisher": "Microsoft","version": "22.1.55890.56216"},
+
+          {"id": "d3c551dd-5903-4194-b153-04ced9d29a2c",
+          "name": "India Tax Base","publisher": "Microsoft","version": "22.1.55890.56216"},
+
+          {"id": "c1eafb3f-e397-468e-bdb4-ecc5c317ca00",
+          "name": "Tax Engine","publisher": "Microsoft","version": "22.1.55890.56216"}
+
+
+                                    
+    ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.1",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to":99000
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+    
+  },
+  "runtime": "11.0",
+  "target": "OnPrem",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

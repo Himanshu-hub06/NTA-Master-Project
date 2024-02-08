@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FileNo_WritCaseHeader">
+          <DataField>FileNo_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="ReportFIlters">
+          <DataField>ReportFIlters</DataField>
+        </Field>
+        <Field Name="CaseType_WritCaseHeader">
+          <DataField>CaseType_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="Status_WritCaseHeader">
+          <DataField>Status_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="Year_WritCaseHeader">
+          <DataField>Year_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="SectionCode_WritCaseHeader">
+          <DataField>SectionCode_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="SectionName_WritCaseHeader">
+          <DataField>SectionName_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="CPCount">
+          <DataField>CPCount</DataField>
+        </Field>
+        <Field Name="SOFSCount">
+          <DataField>SOFSCount</DataField>
+        </Field>
+        <Field Name="SWaitingCount">
+          <DataField>SWaitingCount</DataField>
+        </Field>
+        <Field Name="SPUPCount">
+          <DataField>SPUPCount</DataField>
+        </Field>
+        <Field Name="SPUVCount">
+          <DataField>SPUVCount</DataField>
+        </Field>
+        <Field Name="SPUACount">
+          <DataField>SPUACount</DataField>
+        </Field>
+        <Field Name="EndingDate">
+          <DataField>EndingDate</DataField>
+        </Field>
+        <Field Name="Grand_Total_Caption">
+          <DataField>Grand_Total_Caption</DataField>
+        </Field>
+        <Field Name="FirstHearingDate_WritCaseHeader">
+          <DataField>FirstHearingDate_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="CaseFilingDate_WritCaseHeader">
+          <DataField>CaseFilingDate_WritCaseHeader</DataField>
+        </Field>
+        <Field Name="Company_Picture">
+          <DataField>Company_Picture</DataField>
+        </Field>
+        <Field Name="UserExamCode">
+          <DataField>UserExamCode</DataField>
+        </Field>
+        <Field Name="CAFileCounter">
+          <DataField>CAFileCounter</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

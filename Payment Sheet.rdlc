@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="BankNameBranch_ApprovedBills">
+          <DataField>BankNameBranch_ApprovedBills</DataField>
+        </Field>
+        <Field Name="AccountNo_ApprovedBills">
+          <DataField>AccountNo_ApprovedBills</DataField>
+        </Field>
+        <Field Name="IFSCCode_ApprovedBills">
+          <DataField>IFSCCode_ApprovedBills</DataField>
+        </Field>
+        <Field Name="BillID_ApprovedBills">
+          <DataField>BillID_ApprovedBills</DataField>
+        </Field>
+        <Field Name="ExamID_ApprovedBills">
+          <DataField>ExamID_ApprovedBills</DataField>
+        </Field>
+        <Field Name="ExamDate_ApprovedBills">
+          <DataField>ExamDate_ApprovedBills</DataField>
+        </Field>
+        <Field Name="PayableAmount_ApprovedBills">
+          <DataField>PayableAmount_ApprovedBills</DataField>
+        </Field>
+        <Field Name="PayableAmount_ApprovedBillsFormat">
+          <DataField>PayableAmount_ApprovedBillsFormat</DataField>
+        </Field>
+        <Field Name="PostingDate_ApprovedBills">
+          <DataField>PostingDate_ApprovedBills</DataField>
+        </Field>
+        <Field Name="ExamCode_ApprovedBills">
+          <DataField>ExamCode_ApprovedBills</DataField>
+        </Field>
+        <Field Name="ExamName_ApprovedBills">
+          <DataField>ExamName_ApprovedBills</DataField>
+        </Field>
+        <Field Name="ReferenceNo_ApprovedBills">
+          <DataField>ReferenceNo_ApprovedBills</DataField>
+        </Field>
+        <Field Name="BillType_ApprovedBills">
+          <DataField>BillType_ApprovedBills</DataField>
+        </Field>
+        <Field Name="Name_ApprovedBills">
+          <DataField>Name_ApprovedBills</DataField>
+        </Field>
+        <Field Name="StateCode_ApprovedBills">
+          <DataField>StateCode_ApprovedBills</DataField>
+        </Field>
+        <Field Name="EmailID_ApprovedBills">
+          <DataField>EmailID_ApprovedBills</DataField>
+        </Field>
+        <Field Name="Mobile_ApprovedBills">
+          <DataField>Mobile_ApprovedBills</DataField>
+        </Field>
+        <Field Name="BalanceAmount_ApprovedBills">
+          <DataField>BalanceAmount_ApprovedBills</DataField>
+        </Field>
+        <Field Name="BalanceAmount_ApprovedBillsFormat">
+          <DataField>BalanceAmount_ApprovedBillsFormat</DataField>
+        </Field>
+        <Field Name="CurrentPaymentAmount_ApprovedBills">
+          <DataField>CurrentPaymentAmount_ApprovedBills</DataField>
+        </Field>
+        <Field Name="CurrentPaymentAmount_ApprovedBillsFormat">
+          <DataField>CurrentPaymentAmount_ApprovedBillsFormat</DataField>
+        </Field>
+        <Field Name="SelectionForPayment_ApprovedBills">
+          <DataField>SelectionForPayment_ApprovedBills</DataField>
+        </Field>
+        <Field Name="Sr_No_">
+          <DataField>Sr_No_</DataField>
+        </Field>
+        <Field Name="Apprv_1">
+          <DataField>Apprv_1</DataField>
+        </Field>
+        <Field Name="Apprv_2">
+          <DataField>Apprv_2</DataField>
+        </Field>
+        <Field Name="Apprv_3">
+          <DataField>Apprv_3</DataField>
+        </Field>
+        <Field Name="Apprv_4">
+          <DataField>Apprv_4</DataField>
+        </Field>
+        <Field Name="Apprv_5">
+          <DataField>Apprv_5</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
