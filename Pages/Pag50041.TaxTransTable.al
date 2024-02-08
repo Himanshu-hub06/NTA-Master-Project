@@ -88,6 +88,10 @@ page 50041 TaxTransTable
                 {
                     ToolTip = 'Specifies the value of the Value Type field.';
                 }
+                field("Visible on Interface"; Rec."Visible on Interface")
+                {
+                    ToolTip = 'Specifies the value of the Visible on Interface field.';
+                }
 
             }
         }
